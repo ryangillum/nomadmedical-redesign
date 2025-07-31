@@ -72,6 +72,7 @@ header {
 
 nav ul {
   list-style: none;
+  
   margin: 0;
   padding: 0;
   display: flex;
@@ -288,4 +289,13 @@ nav a:hover {
   .cards {
     flex-direction: row;
   }
+}
+
+/* Added image style for cards */
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
