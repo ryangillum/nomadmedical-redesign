@@ -312,3 +312,49 @@ nav a:hover {
     flex-direction: row;
   }
 }
+
+/* Leadership section styles */
+.leadership-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px var(--card-shadow);
+}
+
+.leadership-card img.leader-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.leadership-card .leadership-bio {
+  max-width: 800px;
+}
+
+.leadership-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.leadership-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--dark-text);
+}
+
+@media (min-width: 768px) {
+  .leadership-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .leadership-card img.leader-photo {
+    margin-right: 2rem;
+  }
+}
