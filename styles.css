@@ -94,7 +94,8 @@ nav a:hover {
 /* Hero and sub‑hero sections */
 .hero {
   /* Use the original Nomad Medical hero image from the legacy site for a more authentic feel */
-  background-image: url('assets/hero-original.webp');
+  /* Updated hero background to a more inspiring illustration showing a hiker looking out over mountains with a healthcare motif */
+  background-image: url('assets/hero-inspiring.png');
   background-size: cover;
   background-position: center;
   /* Use the primary colour for text on the light gradient background to improve
