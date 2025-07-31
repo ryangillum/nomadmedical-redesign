@@ -72,7 +72,6 @@ header {
 
 nav ul {
   list-style: none;
-  
   margin: 0;
   padding: 0;
   display: flex;
@@ -94,7 +93,8 @@ nav a:hover {
 
 /* Hero and sub‑hero sections */
 .hero {
-  background-image: url('assets/hero-background.png');
+  /* Use the original Nomad Medical hero image from the legacy site for a more authentic feel */
+  background-image: url('assets/hero-original.webp');
   background-size: cover;
   background-position: center;
   /* Use the primary colour for text on the light gradient background to improve
@@ -200,6 +200,16 @@ nav a:hover {
   color: var(--primary-color);
 }
 
+/* Style images inserted into cards from the original Nomad Medical site */
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
 .card h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -289,13 +299,4 @@ nav a:hover {
   .cards {
     flex-direction: row;
   }
-}
-
-/* Added image style for cards */
-.card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
 }
