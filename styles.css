@@ -94,9 +94,9 @@ nav a:hover {
 
 /* Hero and sub‑hero sections */
 .hero {
-  /* Use the original Nomad Medical hero image from the legacy site for a more authentic feel */
-  /* Revert hero background to the original black‑and‑white mountain silhouette from the legacy site */
-  background-image: url('assets/hero-original.webp');
+  /* Use a fresh abstract illustration that matches the site’s breezy colour palette */
+  /* This new hero features flowing teal and turquoise shapes with a subtle medical cross */
+  background-image: url('assets/hero-abstract.png');
   background-size: cover;
   background-position: center;
   /* Use the primary colour for text on the light gradient background to improve
