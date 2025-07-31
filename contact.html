@@ -43,7 +43,8 @@
 
     <!-- Contact Form -->
     <section class="section">
-      <form class="contact-form" action="#" method="post">
+      <!-- Update contact form to submit via formsubmit.co and include a spam-prevention honeypot field -->
+      <form class="contact-form" action="https://formsubmit.co/info@nomadmedical.org" method="POST">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required />
         <label for="email">Email</label>
@@ -62,6 +63,12 @@
           placeholder="Your Message"
           required
         ></textarea>
+        <!-- Honeypot field to catch bots; normal users won't see or fill this -->
+        <input type="text" name="_honey" style="display:none" aria-hidden="true">
+        <!-- Email subject for the form submission -->
+        <input type="hidden" name="_subject" value="New Contact Form Submission from Nomad Medical">
+        <!-- Use a table template for the email for easier readability -->
+        <input type="hidden" name="_template" value="table">
         <button type="submit" class="cta-button">Send</button>
       </form>
     </section>
