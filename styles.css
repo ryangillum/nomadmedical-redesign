@@ -131,37 +131,47 @@ nav a:hover {
 }
 
 /* Secondary hero for internal pages */
-.subhero {
-  background: var(--primary-color);
-  color: var(--light-text);
-  text-align: center;
-  padding: 4rem 1rem;
-}
+/*
+      Subhero sections on internal pages now share the same abstract hero
+      illustration as the main landing page. This ensures visual
+      consistency across the site and maintains the breezy look and feel.
 
-.subhero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
+      We reuse the hero background and styling while keeping slightly
+      smaller vertical padding to differentiate the hierarchy of pages.
+    */
+    .subhero {
+      background-image: url('assets/hero-abstract.png');
+      background-size: cover;
+      background-position: center;
+      color: var(--primary-color);
+      text-align: center;
+      padding: 4rem 1rem;
+    }
 
-.subhero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
+    .subhero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
 
-.subhero .cta-button {
-  display: inline-block;
-  background: var(--secondary-color);
-  color: var(--light-text);
-  padding: 0.8rem 1.6rem;
-  border-radius: 30px;
-  font-weight: 500;
-  transition: background 0.3s ease;
-}
+    .subhero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
 
-.subhero .cta-button:hover {
-  background: var(--light-bg);
-  color: var(--primary-color);
-}
+    .subhero .cta-button {
+      display: inline-block;
+      background: var(--secondary-color);
+      color: var(--light-text);
+      padding: 0.8rem 1.6rem;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .subhero .cta-button:hover {
+      background: var(--light-bg);
+      color: var(--primary-color);
+    }
 
 /* Generic section styling */
 .section {
