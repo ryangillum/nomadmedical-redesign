@@ -12,9 +12,10 @@
 
 :root {
   /* Brand colours */
-  --primary-color: #2b7a78;
-  --secondary-color: #3aafa9;
-  --light-bg: #f4fdfc;
+  /* Updated colour palette for a more open and breezy feel */
+  --primary-color: #2c83c7; /* airy blue for headings and accents */
+  --secondary-color: #68c3d4; /* soft turquoise for highlights */
+  --light-bg: #f7fbfe; /* very light background with a hint of blue */
   --dark-text: #333333;
   --light-text: #ffffff;
   --card-bg: #ffffff;
