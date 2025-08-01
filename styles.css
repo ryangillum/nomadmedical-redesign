@@ -92,18 +92,33 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
+/* Hide the default menu toggle button on larger screens */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 /* Hero and sub‑hero sections */
 .hero {
   /* Use a fresh abstract illustration that matches the site’s breezy colour palette */
   /* This new hero features flowing teal and turquoise shapes with a subtle medical cross */
   background-image: url('assets/hero-abstract.png');
   background-size: cover;
-  background-position: center;
+  /* Show the top of the illustration so that the cross is visible */
+  background-position: center top;
   /* Use the primary colour for text on the light gradient background to improve
      contrast and legibility. */
   color: var(--primary-color);
   text-align: center;
-  padding: 6rem 1rem;
+  /* Increase the vertical padding on the hero so the cross in the illustration is fully visible. */
+  padding: 8rem 1rem;
+  /* Ensure a minimum height on large screens to prevent the illustration from being cropped. */
+  /* Expand the hero’s minimum height further so the cross in the illustration appears in view */
+  min-height: 650px;
 }
 
 .hero h1 {
@@ -356,5 +371,76 @@ nav a:hover {
   }
   .leadership-card img.leader-photo {
     margin-right: 2rem;
+  }
+}
+
+/*
+  Mobile optimization
+
+  These styles improve the layout and readability on phones and other small
+  devices. Navigation items stack vertically, hero and subhero headings
+  scale down, and padding is reduced to make better use of limited
+  screen space.
+*/
+@media (max-width: 767px) {
+  /* On small screens align logo and menu toggle horizontally and allow nav to wrap below */
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* Show the menu toggle button on small screens */
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* Hide navigation by default on mobile; it will appear below header when open */
+  header nav {
+    display: none;
+    width: 100%;
+  }
+
+  /* Show navigation when open class is applied */
+  header nav.open {
+    display: block;
+  }
+
+  /* Stack nav items vertically on small screens */
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  .hero {
+    /* Increase padding on small screens slightly to reveal more of the hero illustration */
+    padding: 5rem 1rem;
+    min-height: 450px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .subhero {
+    padding: 3rem 1rem;
+  }
+
+  .subhero h1 {
+    font-size: 2rem;
+  }
+
+  .subhero p {
+    font-size: 1rem;
   }
 }
