@@ -27,6 +27,8 @@
          <a href="index.html" class="logo">
              <i class="fas fa-globe"></i> Nomad Medical
            </a>
+           <!-- Menu toggle button for smaller screens -->
+           <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
            <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -138,5 +140,14 @@
         <a href="#">Terms and Conditions</a>
       </p>
     </footer>
+
+    <!-- Script to toggle navigation menu on mobile devices -->
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('header nav');
+      menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>
